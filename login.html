@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户登录 - 有机农场</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 页面容器：居中显示，撑满高度 */
+    .page-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .login-logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .login-title {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #88c425;
+      box-shadow: 0 0 0 2px rgba(136, 196, 37, 0.1);
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #88c425;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #77b01f;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .form-footer a {
+      color: #88c425;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .form-footer a:hover {
+      color: #77b01f;
+      text-decoration: underline;
+    }
+
+    .form-footer p {
+      margin-bottom: 8px;
+    }
+
+    .login-footer {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+
+    .copyright {
+      color: #999;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="login-container">
+      <div class="login-logo">
+        <img src="static/image/logo-图文.png" alt="有机农场Logo">
+      </div>
+      <h2 class="login-title">用户登录</h2>
+      <form>
+        <div class="form-group">
+          <label for="email">邮箱</label>
+          <input type="email" id="email" placeholder="请输入您的邮箱地址" required>
+        </div>
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" id="password" placeholder="请输入您的密码" required>
+        </div>
+        <button type="submit" class="login-btn">登录</button>
+        <div class="form-footer">
+          <p>还没有账号？<a href="register.html">立即注册</a></p>
+          <p><a href="forgot-password.html">忘记密码？</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="login-footer">
+    <p class="copyright">© 2026 新鲜有机农场牧场 保留所有权利</p>
+  </footer>
+</body>
+
+</html>
